@@ -1,4 +1,4 @@
-CREATE TABLE notes (
+CREATE TABLE blogs (
     id SERIAL PRIMARY KEY,
     author text,
     url text NOT NULL,
