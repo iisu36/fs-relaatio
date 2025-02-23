@@ -11,8 +11,6 @@ router.post('/', async (req, res) => {
 router.put('/:id', tokenExtractor, async (req, res) => {
   const user = await User.findByPk(req.decodedToken.id)
   const readingList = await ReadingList.findByPk(req.params.id)
-  console.log(user)
-  console.log(readingList)
   if (user.id === readingList.userId) {
     await readingList.update(req.body)
     res.json(readingList)

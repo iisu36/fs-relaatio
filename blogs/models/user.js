@@ -25,6 +25,7 @@ User.init(
     },
     createdAt: DataTypes.DATE,
     updatedAt: DataTypes.DATE,
+    disabled: { type: DataTypes.BOOLEAN, default: false },
   },
   {
     sequelize,
