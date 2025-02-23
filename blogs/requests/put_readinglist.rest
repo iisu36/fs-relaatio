@@ -1,10 +1,7 @@
-POST http://localhost:3003/api/blogs/
+PUT http://localhost:3003/api/readinglists/1
 Content-Type: application/json
 Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1hcnR5QHRlc3QuY29tIiwiaWQiOjEsImlhdCI6MTc0MDMxNzkyNn0.6Fc_o5f8rn4USIDXzHz2RYJCSKfPAxFIPoAx_8ijutA
 
 {
-  "author": "Real java",
-  "url": "real.url.com",
-  "title": "Is it real",
-  "year": 1999
+  "read": true
 }
